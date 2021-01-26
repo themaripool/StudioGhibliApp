@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B9BFBC825BF836F0010E2F3 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BFBC725BF836F0010E2F3 /* Movies.swift */; };
+		0B9BFBD425BFA0350010E2F3 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BFBD325BFA0350010E2F3 /* HomeCollectionViewController.swift */; };
+		0B9BFBD825BFA4870010E2F3 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BFBD725BFA4870010E2F3 /* HeaderView.swift */; };
+		0B9BFBDB25BFAA5E0010E2F3 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BFBDA25BFAA5E0010E2F3 /* Extensions+UIView.swift */; };
 		0BD5DE1025ADE6CD00CE9EC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD5DE0F25ADE6CD00CE9EC9 /* AppDelegate.swift */; };
 		0BD5DE1225ADE6CD00CE9EC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD5DE1125ADE6CD00CE9EC9 /* SceneDelegate.swift */; };
-		0BD5DE1425ADE6CD00CE9EC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD5DE1325ADE6CD00CE9EC9 /* ViewController.swift */; };
 		0BD5DE1725ADE6CD00CE9EC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD5DE1525ADE6CD00CE9EC9 /* Main.storyboard */; };
 		0BD5DE1925ADE6CE00CE9EC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BD5DE1825ADE6CE00CE9EC9 /* Assets.xcassets */; };
 		0BD5DE1C25ADE6CE00CE9EC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD5DE1A25ADE6CE00CE9EC9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B9BFBC725BF836F0010E2F3 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		0B9BFBD325BFA0350010E2F3 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		0B9BFBD725BFA4870010E2F3 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		0B9BFBDA25BFAA5E0010E2F3 /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
 		0BD5DE0C25ADE6CD00CE9EC9 /* StudioGhibliApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudioGhibliApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD5DE0F25ADE6CD00CE9EC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BD5DE1125ADE6CD00CE9EC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0BD5DE1325ADE6CD00CE9EC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0BD5DE1625ADE6CD00CE9EC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0BD5DE1825ADE6CE00CE9EC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BD5DE1B25ADE6CE00CE9EC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B9BFBC625BF835C0010E2F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0B9BFBC725BF836F0010E2F3 /* Movies.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0BD5DE0325ADE6CD00CE9EC9 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +70,16 @@
 		0BD5DE0E25ADE6CD00CE9EC9 /* StudioGhibliApp */ = {
 			isa = PBXGroup;
 			children = (
+				0B9BFBC625BF835C0010E2F3 /* Models */,
 				0BD5DE0F25ADE6CD00CE9EC9 /* AppDelegate.swift */,
 				0BD5DE1125ADE6CD00CE9EC9 /* SceneDelegate.swift */,
-				0BD5DE1325ADE6CD00CE9EC9 /* ViewController.swift */,
 				0BD5DE1525ADE6CD00CE9EC9 /* Main.storyboard */,
 				0BD5DE1825ADE6CE00CE9EC9 /* Assets.xcassets */,
 				0BD5DE1A25ADE6CE00CE9EC9 /* LaunchScreen.storyboard */,
 				0BD5DE1D25ADE6CE00CE9EC9 /* Info.plist */,
+				0B9BFBDA25BFAA5E0010E2F3 /* Extensions+UIView.swift */,
+				0B9BFBD325BFA0350010E2F3 /* HomeCollectionViewController.swift */,
+				0B9BFBD725BFA4870010E2F3 /* HeaderView.swift */,
 			);
 			path = StudioGhibliApp;
 			sourceTree = "<group>";
@@ -137,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BD5DE1425ADE6CD00CE9EC9 /* ViewController.swift in Sources */,
+				0B9BFBD825BFA4870010E2F3 /* HeaderView.swift in Sources */,
 				0BD5DE1025ADE6CD00CE9EC9 /* AppDelegate.swift in Sources */,
+				0B9BFBDB25BFAA5E0010E2F3 /* Extensions+UIView.swift in Sources */,
+				0B9BFBC825BF836F0010E2F3 /* Movies.swift in Sources */,
+				0B9BFBD425BFA0350010E2F3 /* HomeCollectionViewController.swift in Sources */,
 				0BD5DE1225ADE6CD00CE9EC9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
