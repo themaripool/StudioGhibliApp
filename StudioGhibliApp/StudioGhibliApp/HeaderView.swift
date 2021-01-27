@@ -10,7 +10,7 @@ import UIKit
 class HeaderView: UICollectionReusableView {
     
     let imageView: UIImageView = {
-        let imgView = UIImageView(image: #imageLiteral(resourceName: "poster1"))
+        let imgView = UIImageView(image: #imageLiteral(resourceName: "Banners_placeholder5"))
         imgView.contentMode = .scaleAspectFill
         return imgView
     }()

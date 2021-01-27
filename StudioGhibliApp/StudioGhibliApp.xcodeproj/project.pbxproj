@@ -11,6 +11,7 @@
 		0B9BFBD425BFA0350010E2F3 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BFBD325BFA0350010E2F3 /* HomeCollectionViewController.swift */; };
 		0B9BFBD825BFA4870010E2F3 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BFBD725BFA4870010E2F3 /* HeaderView.swift */; };
 		0B9BFBDB25BFAA5E0010E2F3 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BFBDA25BFAA5E0010E2F3 /* Extensions+UIView.swift */; };
+		0B9BFBDE25BFAFA90010E2F3 /* StretchyHeaderLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BFBDD25BFAFA90010E2F3 /* StretchyHeaderLayout.swift */; };
 		0BD5DE1025ADE6CD00CE9EC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD5DE0F25ADE6CD00CE9EC9 /* AppDelegate.swift */; };
 		0BD5DE1225ADE6CD00CE9EC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD5DE1125ADE6CD00CE9EC9 /* SceneDelegate.swift */; };
 		0BD5DE1725ADE6CD00CE9EC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD5DE1525ADE6CD00CE9EC9 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		0B9BFBD325BFA0350010E2F3 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		0B9BFBD725BFA4870010E2F3 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		0B9BFBDA25BFAA5E0010E2F3 /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
+		0B9BFBDD25BFAFA90010E2F3 /* StretchyHeaderLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderLayout.swift; sourceTree = "<group>"; };
 		0BD5DE0C25ADE6CD00CE9EC9 /* StudioGhibliApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudioGhibliApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD5DE0F25ADE6CD00CE9EC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BD5DE1125ADE6CD00CE9EC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				0B9BFBDA25BFAA5E0010E2F3 /* Extensions+UIView.swift */,
 				0B9BFBD325BFA0350010E2F3 /* HomeCollectionViewController.swift */,
 				0B9BFBD725BFA4870010E2F3 /* HeaderView.swift */,
+				0B9BFBDD25BFAFA90010E2F3 /* StretchyHeaderLayout.swift */,
 			);
 			path = StudioGhibliApp;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				0B9BFBD825BFA4870010E2F3 /* HeaderView.swift in Sources */,
 				0BD5DE1025ADE6CD00CE9EC9 /* AppDelegate.swift in Sources */,
 				0B9BFBDB25BFAA5E0010E2F3 /* Extensions+UIView.swift in Sources */,
+				0B9BFBDE25BFAFA90010E2F3 /* StretchyHeaderLayout.swift in Sources */,
 				0B9BFBC825BF836F0010E2F3 /* Movies.swift in Sources */,
 				0B9BFBD425BFA0350010E2F3 /* HomeCollectionViewController.swift in Sources */,
 				0BD5DE1225ADE6CD00CE9EC9 /* SceneDelegate.swift in Sources */,
