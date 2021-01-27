@@ -21,22 +21,43 @@ class ViewController: UIViewController, iCarouselDataSource {
         view.addSubview(homeCarousel)
         homeCarousel.dataSource = self
        // homeCarousel.autoscroll = -0.3
-        
-        homeCarousel.frame = CGRect(x: 0, y: 80, width: view.frame.size.width, height: 400)
+        homeCarousel.frame = CGRect(x: 0, y: 150, width: view.frame.size.width, height: 450)
+        setupTitle()
+        navigationController?.navigationBar.isHidden = true
+    }
+    
+    func setupTitle(){
+        let label = UILabel(frame: CGRect(x: 0, y: 30, width: 200, height: 50))
+        label.center = CGPoint(x: 90, y: 100)
+        label.textAlignment = .center
+        label.text = "Movies"
+        label.font = UIFont(name:"ArialRoundedMTBold", size: 40.0)
+        view.addSubview(label)
     }
     
     func numberOfItems(in carousel: iCarousel) -> Int {
         return 5
     }
     
+    @objc func goToDetailView(){
+        let newViewController =  HomeCollectionViewController(collectionViewLayout: StretchyHeaderLayout())
+        self.navigationController?.pushViewController(newViewController, animated: true)
+
+    }
+    
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: 350, height: 400))
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 350, height: 450))
         view.backgroundColor = .red
         
         let imgView = UIImageView(frame: view.bounds)
         view.addSubview(imgView)
         imgView.contentMode = .scaleToFill
         imgView.image = UIImage(named: "Banners_placeholder\(index+1)")
+        
+        
+        let tapGesture = UITapGestureRecognizer(target: self , action: #selector(goToDetailView))
+        view.addGestureRecognizer(tapGesture)
+        
         return view
     }
 }
