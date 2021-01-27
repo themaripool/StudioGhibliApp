@@ -1,0 +1,6 @@
+framework module Pods_StudioGhibliApp {
+  umbrella header "Pods-StudioGhibliApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

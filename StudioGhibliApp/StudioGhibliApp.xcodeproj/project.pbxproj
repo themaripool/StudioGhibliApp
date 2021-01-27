@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B61F2A825C1FB76002A7C88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61F2A725C1FB76002A7C88 /* ViewController.swift */; };
 		0B9BFBC825BF836F0010E2F3 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BFBC725BF836F0010E2F3 /* Movies.swift */; };
 		0B9BFBD425BFA0350010E2F3 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BFBD325BFA0350010E2F3 /* HomeCollectionViewController.swift */; };
 		0B9BFBD825BFA4870010E2F3 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BFBD725BFA4870010E2F3 /* HeaderView.swift */; };
@@ -17,9 +18,11 @@
 		0BD5DE1725ADE6CD00CE9EC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD5DE1525ADE6CD00CE9EC9 /* Main.storyboard */; };
 		0BD5DE1925ADE6CE00CE9EC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BD5DE1825ADE6CE00CE9EC9 /* Assets.xcassets */; };
 		0BD5DE1C25ADE6CE00CE9EC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD5DE1A25ADE6CE00CE9EC9 /* LaunchScreen.storyboard */; };
+		DF52448901C439DA507326B9 /* Pods_StudioGhibliApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C09A104878C1FA887D9936 /* Pods_StudioGhibliApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B61F2A725C1FB76002A7C88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0B9BFBC725BF836F0010E2F3 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		0B9BFBD325BFA0350010E2F3 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		0B9BFBD725BFA4870010E2F3 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -32,6 +35,9 @@
 		0BD5DE1825ADE6CE00CE9EC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BD5DE1B25ADE6CE00CE9EC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BD5DE1D25ADE6CE00CE9EC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31C09A104878C1FA887D9936 /* Pods_StudioGhibliApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudioGhibliApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53AC86418BF08D8BAC393143 /* Pods-StudioGhibliApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudioGhibliApp.debug.xcconfig"; path = "Target Support Files/Pods-StudioGhibliApp/Pods-StudioGhibliApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8B772D24FC249D68ECD0774E /* Pods-StudioGhibliApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudioGhibliApp.release.xcconfig"; path = "Target Support Files/Pods-StudioGhibliApp/Pods-StudioGhibliApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF52448901C439DA507326B9 /* Pods_StudioGhibliApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +65,8 @@
 			children = (
 				0BD5DE0E25ADE6CD00CE9EC9 /* StudioGhibliApp */,
 				0BD5DE0D25ADE6CD00CE9EC9 /* Products */,
+				CD8B711C6692905CD3285366 /* Pods */,
+				EE759D0991F3AA53F3F21184 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,8 +92,27 @@
 				0B9BFBD325BFA0350010E2F3 /* HomeCollectionViewController.swift */,
 				0B9BFBD725BFA4870010E2F3 /* HeaderView.swift */,
 				0B9BFBDD25BFAFA90010E2F3 /* StretchyHeaderLayout.swift */,
+				0B61F2A725C1FB76002A7C88 /* ViewController.swift */,
 			);
 			path = StudioGhibliApp;
+			sourceTree = "<group>";
+		};
+		CD8B711C6692905CD3285366 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53AC86418BF08D8BAC393143 /* Pods-StudioGhibliApp.debug.xcconfig */,
+				8B772D24FC249D68ECD0774E /* Pods-StudioGhibliApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE759D0991F3AA53F3F21184 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31C09A104878C1FA887D9936 /* Pods_StudioGhibliApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,9 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0BD5DE2025ADE6CE00CE9EC9 /* Build configuration list for PBXNativeTarget "StudioGhibliApp" */;
 			buildPhases = (
+				F635C48EDC2D91493694E227 /* [CP] Check Pods Manifest.lock */,
 				0BD5DE0825ADE6CD00CE9EC9 /* Sources */,
 				0BD5DE0925ADE6CD00CE9EC9 /* Frameworks */,
 				0BD5DE0A25ADE6CD00CE9EC9 /* Resources */,
+				D54AE0290AF8DD9B4FE744AE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +182,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D54AE0290AF8DD9B4FE744AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StudioGhibliApp/Pods-StudioGhibliApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StudioGhibliApp/Pods-StudioGhibliApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StudioGhibliApp/Pods-StudioGhibliApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F635C48EDC2D91493694E227 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StudioGhibliApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0BD5DE0825ADE6CD00CE9EC9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -163,6 +235,7 @@
 				0B9BFBDE25BFAFA90010E2F3 /* StretchyHeaderLayout.swift in Sources */,
 				0B9BFBC825BF836F0010E2F3 /* Movies.swift in Sources */,
 				0B9BFBD425BFA0350010E2F3 /* HomeCollectionViewController.swift in Sources */,
+				0B61F2A825C1FB76002A7C88 /* ViewController.swift in Sources */,
 				0BD5DE1225ADE6CD00CE9EC9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +380,7 @@
 		};
 		0BD5DE2125ADE6CE00CE9EC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53AC86418BF08D8BAC393143 /* Pods-StudioGhibliApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,6 +400,7 @@
 		};
 		0BD5DE2225ADE6CE00CE9EC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B772D24FC249D68ECD0774E /* Pods-StudioGhibliApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
