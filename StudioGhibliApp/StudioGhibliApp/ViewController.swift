@@ -9,6 +9,11 @@ import UIKit
 import iCarousel
 
 class HomeViewController: UIViewController, iCarouselDataSource {
+    
+    var infoTest = ["filme 01", "filme 02", "filme 03", "filme 04", "filme 05" ]
+    
+    @IBOutlet weak var viewName: UIView!
+    
 
     var homeCarousel: iCarousel = {
         let view = iCarousel()
