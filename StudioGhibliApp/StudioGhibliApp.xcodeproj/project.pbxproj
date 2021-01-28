@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B61F2A825C1FB76002A7C88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61F2A725C1FB76002A7C88 /* ViewController.swift */; };
+		0B61F2A825C1FB76002A7C88 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61F2A725C1FB76002A7C88 /* HomeViewController.swift */; };
 		0B9BFBC825BF836F0010E2F3 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BFBC725BF836F0010E2F3 /* Movies.swift */; };
-		0B9BFBD425BFA0350010E2F3 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BFBD325BFA0350010E2F3 /* HomeCollectionViewController.swift */; };
+		0B9BFBD425BFA0350010E2F3 /* DetailsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BFBD325BFA0350010E2F3 /* DetailsCollectionViewController.swift */; };
 		0B9BFBD825BFA4870010E2F3 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BFBD725BFA4870010E2F3 /* HeaderView.swift */; };
 		0B9BFBDB25BFAA5E0010E2F3 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BFBDA25BFAA5E0010E2F3 /* Extensions+UIView.swift */; };
 		0B9BFBDE25BFAFA90010E2F3 /* StretchyHeaderLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BFBDD25BFAFA90010E2F3 /* StretchyHeaderLayout.swift */; };
@@ -22,9 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B61F2A725C1FB76002A7C88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B61F2A725C1FB76002A7C88 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0B9BFBC725BF836F0010E2F3 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
-		0B9BFBD325BFA0350010E2F3 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		0B9BFBD325BFA0350010E2F3 /* DetailsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCollectionViewController.swift; sourceTree = "<group>"; };
 		0B9BFBD725BFA4870010E2F3 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		0B9BFBDA25BFAA5E0010E2F3 /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
 		0B9BFBDD25BFAFA90010E2F3 /* StretchyHeaderLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderLayout.swift; sourceTree = "<group>"; };
@@ -89,10 +89,10 @@
 				0BD5DE1A25ADE6CE00CE9EC9 /* LaunchScreen.storyboard */,
 				0BD5DE1D25ADE6CE00CE9EC9 /* Info.plist */,
 				0B9BFBDA25BFAA5E0010E2F3 /* Extensions+UIView.swift */,
-				0B9BFBD325BFA0350010E2F3 /* HomeCollectionViewController.swift */,
+				0B9BFBD325BFA0350010E2F3 /* DetailsCollectionViewController.swift */,
 				0B9BFBD725BFA4870010E2F3 /* HeaderView.swift */,
 				0B9BFBDD25BFAFA90010E2F3 /* StretchyHeaderLayout.swift */,
-				0B61F2A725C1FB76002A7C88 /* ViewController.swift */,
+				0B61F2A725C1FB76002A7C88 /* HomeViewController.swift */,
 			);
 			path = StudioGhibliApp;
 			sourceTree = "<group>";
@@ -103,7 +103,6 @@
 				53AC86418BF08D8BAC393143 /* Pods-StudioGhibliApp.debug.xcconfig */,
 				8B772D24FC249D68ECD0774E /* Pods-StudioGhibliApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -234,8 +233,8 @@
 				0B9BFBDB25BFAA5E0010E2F3 /* Extensions+UIView.swift in Sources */,
 				0B9BFBDE25BFAFA90010E2F3 /* StretchyHeaderLayout.swift in Sources */,
 				0B9BFBC825BF836F0010E2F3 /* Movies.swift in Sources */,
-				0B9BFBD425BFA0350010E2F3 /* HomeCollectionViewController.swift in Sources */,
-				0B61F2A825C1FB76002A7C88 /* ViewController.swift in Sources */,
+				0B9BFBD425BFA0350010E2F3 /* DetailsCollectionViewController.swift in Sources */,
+				0B61F2A825C1FB76002A7C88 /* HomeViewController.swift in Sources */,
 				0BD5DE1225ADE6CD00CE9EC9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

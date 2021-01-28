@@ -11,6 +11,7 @@ class HeaderView: UICollectionReusableView {
     
     let imageView: UIImageView = {
         let imgView = UIImageView(image: #imageLiteral(resourceName: "Banners_placeholder3"))
+        // image size = 500x650
         imgView.contentMode = .scaleAspectFill
         return imgView
     }()

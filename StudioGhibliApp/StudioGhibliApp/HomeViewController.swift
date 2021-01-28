@@ -23,8 +23,7 @@ class HomeViewController: UIViewController, iCarouselDataSource {
        // homeCarousel.autoscroll = -0.3
         homeCarousel.frame = CGRect(x: 0, y: 150, width: view.frame.size.width, height: 450)
         setupTitle()
-        //navigationController?.navigationBar.isHidden = true
-        self.navigationController?.navigationBar.backgroundColor = .clear
+        navigationController?.navigationBar.isHidden = true
     }
     
     func setupTitle(){
@@ -41,8 +40,9 @@ class HomeViewController: UIViewController, iCarouselDataSource {
     }
     
     @objc func goToDetailView(){
-        let newViewController =  HomeCollectionViewController(collectionViewLayout: StretchyHeaderLayout())
+        let newViewController =  DetailsCollectionViewController(collectionViewLayout: StretchyHeaderLayout())
         self.navigationController?.pushViewController(newViewController, animated: true)
+
     }
     
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {

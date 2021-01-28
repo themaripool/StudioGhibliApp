@@ -8,7 +8,7 @@
 import UIKit
 
 
-class HomeCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class DetailsCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     fileprivate let cellId = "cellId"
     fileprivate let headerId = "headerId"
@@ -20,6 +20,7 @@ class HomeCollectionViewController: UICollectionViewController, UICollectionView
         
         setupCollectionViewLayout()
         setupCollectionView()
+      //  navigationController?.navigationBar.backItem?.backBarButtonItem
     }
     
     fileprivate func setupCollectionViewLayout() {
@@ -33,7 +34,7 @@ class HomeCollectionViewController: UICollectionViewController, UICollectionView
     }
     
     fileprivate func setupCollectionView() {
-        collectionView.backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        collectionView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         collectionView.contentInsetAdjustmentBehavior = .never
         
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
@@ -44,11 +45,9 @@ class HomeCollectionViewController: UICollectionViewController, UICollectionView
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offsetY = scrollView.contentOffset.y
         if offsetY > 0 {
-            print(offsetY)
             headerView?.animator.fractionComplete = 0
             return
         }
-        print(abs(offsetY) / 100)
         headerView?.animator.fractionComplete = abs(offsetY) / 100
         
     }
@@ -59,11 +58,11 @@ class HomeCollectionViewController: UICollectionViewController, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return .init(width: view.frame.width, height: 340)
+        return .init(width: view.frame.width, height: 550)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 18
+        return 8
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
