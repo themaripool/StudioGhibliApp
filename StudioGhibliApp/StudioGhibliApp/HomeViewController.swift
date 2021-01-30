@@ -13,11 +13,17 @@ class HomeViewController: UIViewController, iCarouselDataSource, iCarouselDelega
     
     @IBOutlet weak var infoView: UIView!
     @IBOutlet weak var infoTitle: UILabel!
-    @IBOutlet weak var infoCategory: UILabel!
+    @IBOutlet weak var infoDate: UILabel!
+    @IBOutlet weak var infoRating: UILabel!
+    
     
     var currentIndex: Int = -1
     
-    var infoTest = ["Meu Amigo Totoro", "Castelo Animado", "Castelo Animado 2", "Vidas ao Vento", "Porco Rosso"]
+    var infoTest = [MovieItem(title: "Meu Amigo Totoro", release_date: "2001", rt_score: "78/100"),
+                    MovieItem(title: "Castelo Animado", release_date: "1986", rt_score: "95/100"),
+                    MovieItem(title: "Castelo Animado 2", release_date: "1986", rt_score: "95/100"),
+                    MovieItem(title: "Vidas ao Vento", release_date: "1993", rt_score: "76/100"),
+                    MovieItem(title: "Porco Rosso", release_date: "1976", rt_score: "87/100")]
     
     var homeCarousel: iCarousel = {
         let view = iCarousel()
@@ -30,11 +36,10 @@ class HomeViewController: UIViewController, iCarouselDataSource, iCarouselDelega
         view.addSubview(homeCarousel)
         homeCarousel.dataSource = self
         homeCarousel.delegate = self
-       // homeCarousel.autoscroll = -0.3
         homeCarousel.frame = CGRect(x: 0, y: 150, width: view.frame.size.width, height: 450)
         setupTitle()
         navigationController?.navigationBar.isHidden = true
-        infoView.backgroundColor = #colorLiteral(red: 0.4813390544, green: 0.4813390544, blue: 0.4813390544, alpha: 1)
+        infoView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         infoView.layer.cornerRadius = 30
         
     }
@@ -47,7 +52,7 @@ class HomeViewController: UIViewController, iCarouselDataSource, iCarouselDelega
         label.font = UIFont(name:"ArialRoundedMTBold", size: 40.0)
         view.addSubview(label)
     }
-    
+
     func numberOfItems(in carousel: iCarousel) -> Int {
         return 5
     }
@@ -67,20 +72,39 @@ class HomeViewController: UIViewController, iCarouselDataSource, iCarouselDelega
         imgView.contentMode = .scaleToFill
         imgView.image = UIImage(named: "Banners_placeholder\(index+1)")
         
-        infoTitle.text = infoTest[0]
-        infoCategory.text = "Ação " + "*" + " Aventura"
+        let gradientView = UIImageView(frame: view.bounds)
+        view.addSubview(gradientView)
+        gradientView.contentMode = .scaleToFill
+        gradientView.image = UIImage(named: "gradient")
+      
+        
+        infoTitle.text = infoTest[0].title
+        infoDate.text = infoTest[0].release_date
+        infoRating.text = infoTest[0].rt_score
         
         let tapGesture = UITapGestureRecognizer(target: self , action: #selector(goToDetailView))
         view.addGestureRecognizer(tapGesture)
-        
         return view
     }
     
     func carouselCurrentItemIndexDidChange(_ carousel: iCarousel) {
         currentIndex = carousel.currentItemIndex
-        infoTitle.text = infoTest[carousel.currentItemIndex]
-        print(carousel.currentItemIndex)
+        infoTitle.text = infoTest[carousel.currentItemIndex].title
+        infoDate.text = infoTest[carousel.currentItemIndex].release_date
+        infoRating.text = infoTest[carousel.currentItemIndex].rt_score
+       // print(carousel.currentItemIndex)
     }
+}
+
+struct MovieItem{
+    var title: String
+    var release_date: String
+    var rt_score: String
     
+    init(title: String, release_date: String, rt_score: String) {
+        self.title = title
+        self.release_date = release_date
+        self.rt_score = rt_score
+    }
     
 }
